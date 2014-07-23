@@ -5,7 +5,7 @@
   </header>
 
   <section id="main">
-    <ul id="todo-list">
+    <!--<ul id="todo-list">
       <li class="completed">
         <input type="checkbox" class="toggle">
         <label>Learn Ember.js</label><button class="destroy"></button>
@@ -18,6 +18,14 @@
         <input type="checkbox" class="toggle">
         <label>Profit!</label><button class="destroy"></button>
       </li>
+    </ul>-->
+    <ul id="todo-list">
+      {{#each}}
+        <li>
+          <input type="checkbox" class="toggle">
+          <label>{{title}}</label><button class="destroy"></button>
+        </li>
+      {{/each}}
     </ul>
 
     <input type="checkbox" id="toggle-all">
